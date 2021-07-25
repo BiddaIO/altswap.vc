@@ -11,8 +11,8 @@ import { useUserHasSubmittedClaim } from 'state/transactions/hooks'
 import { useDarkModeManager } from 'state/user/hooks'
 import { useETHBalances } from 'state/wallet/hooks'
 import styled from 'styled-components/macro'
-import Logo from '../../assets/svg/logo.svg'
-import LogoDark from '../../assets/svg/logo_white.svg'
+import Logo from '../../assets/images/logo.png'
+import LogoDark from '../../assets/images/logo-dark.png'
 import { useActiveWeb3React } from '../../hooks/web3'
 import { ExternalLink, TYPE } from '../../theme'
 import ClaimModal from '../claim/ClaimModal'
@@ -47,7 +47,7 @@ const HeaderFrame = styled.div<{ showBackground: boolean }>`
   background-blend-mode: hard-light;
 
   ${({ theme }) => theme.mediaWidth.upToLarge`
-    grid-template-columns: 48px 1fr 1fr;
+    grid-template-columns: 120px 1fr 1fr;
   `};
 
   ${({ theme }) => theme.mediaWidth.upToMedium`
@@ -56,8 +56,8 @@ const HeaderFrame = styled.div<{ showBackground: boolean }>`
   `};
 
   ${({ theme }) => theme.mediaWidth.upToSmall`
-    padding:  1rem;
-    grid-template-columns: 36px 1fr;
+    padding:  1.5rem;
+    grid-template-columns: 120px 1fr;
   `};
 `
 
@@ -264,7 +264,7 @@ export default function Header() {
       </Modal>
       <Title href=".">
         <UniIcon>
-          <img width={'24px'} src={darkMode ? LogoDark : Logo} alt="logo" />
+          <img width={'100px'} src={darkMode ? LogoDark : Logo} alt="logo" />
         </UniIcon>
       </Title>
       <HeaderLinks>

@@ -8,7 +8,7 @@ import { Button } from 'rebass/styled-components'
 import styled from 'styled-components/macro'
 import { ButtonPrimary } from 'components/Button'
 import { AutoColumn } from 'components/Column'
-import { CardBGImage, CardNoise, CardSection, DataCard } from 'components/earn/styled'
+import { CardBGImage, CardNoise, DataCard } from 'components/earn/styled'
 import FormattedCurrencyAmount from 'components/FormattedCurrencyAmount'
 import Loader from 'components/Loader'
 import { AutoRow, RowBetween, RowFixed } from 'components/Row'
@@ -131,32 +131,6 @@ export default function Vote() {
           <VoteCard>
             <CardBGImage />
             <CardNoise />
-            <CardSection>
-              <AutoColumn gap="md">
-                <RowBetween>
-                  <TYPE.white fontWeight={600}>
-                    <Trans>Uniswap Governance</Trans>
-                  </TYPE.white>
-                </RowBetween>
-                <RowBetween>
-                  <TYPE.white fontSize={14}>
-                    <Trans>
-                      UNI tokens represent voting shares in Uniswap governance. You can vote on each proposal yourself
-                      or delegate your votes to a third party.
-                    </Trans>
-                  </TYPE.white>
-                </RowBetween>
-                <ExternalLink
-                  style={{ color: 'white', textDecoration: 'underline' }}
-                  href="https://uniswap.org/blog/uni"
-                  target="_blank"
-                >
-                  <TYPE.white fontSize={14}>
-                    <Trans>Read more about Uniswap governance</Trans>
-                  </TYPE.white>
-                </ExternalLink>
-              </AutoColumn>
-            </CardSection>
             <CardBGImage />
             <CardNoise />
           </VoteCard>
