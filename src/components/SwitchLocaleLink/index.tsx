@@ -12,6 +12,10 @@ const Container = styled(TYPE.small)`
     opacity: 1;
   }
   margin-top: 1rem !important;
+
+  ${({ theme }) => theme.mediaWidth.upToExtraSmall`
+    display: none;
+  `}
 `
 
 const useTargetLocale = (activeLocale: SupportedLocale) => {
