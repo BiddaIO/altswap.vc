@@ -47,7 +47,7 @@ const HeaderFrame = styled.div<{ showBackground: boolean }>`
   background-blend-mode: hard-light;
 
   ${({ theme }) => theme.mediaWidth.upToLarge`
-    grid-template-columns: 48px 1fr 1fr;
+    grid-template-columns: 120px 1fr 1fr;
   `};
 
   ${({ theme }) => theme.mediaWidth.upToMedium`
@@ -56,7 +56,7 @@ const HeaderFrame = styled.div<{ showBackground: boolean }>`
   `};
 
   ${({ theme }) => theme.mediaWidth.upToSmall`
-    padding:  1rem;
+    padding:  1.5rem;
     grid-template-columns: 36px 1fr;
   `};
 `
