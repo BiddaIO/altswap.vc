@@ -6,6 +6,7 @@ import AddressClaimModal from '../components/claim/AddressClaimModal'
 import ErrorBoundary from '../components/ErrorBoundary'
 import Header from '../components/Header'
 import Polling from '../components/Header/Polling'
+import { LoveFromBidda } from '../components/Header/LoveFromBidda'
 import Popups from '../components/Popups'
 import Web3ReactManager from '../components/Web3ReactManager'
 import { ApplicationModal } from '../state/application/actions'
@@ -83,6 +84,7 @@ export default function App() {
           <BodyWrapper>
             <Popups />
             <Polling />
+            <LoveFromBidda />
             <TopLevelModals />
             <Switch>
               <Route exact strict path="/vote" component={Vote} />
