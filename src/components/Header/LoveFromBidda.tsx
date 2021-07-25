@@ -13,7 +13,7 @@ const Container = styled.div`
   text-decoration: underline;
 
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
-    padding: 0.5rem;
+    padding: 3rem;
     `}
 `
 export const Heart = styled.span`
