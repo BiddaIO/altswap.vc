@@ -3,27 +3,29 @@ import styled from 'styled-components/macro'
 import { ExternalLink } from '../../theme'
 
 const Container = styled.div`
-  position: fixed;
   width: 100%;
   left: 0;
-  bottom: 0;
-  padding: 1rem;
+  bottom: 70px;
+  padding-bottom: 1rem;
+
+  position: fixed;
+  text-align: center;
   text-decoration: underline;
 
-  ${({ theme }) => theme.mediaWidth.upToMedium`
-    bottom: 70px;
-    text-align: center;
-  `}
+  ${({ theme }) => theme.mediaWidth.upToExtraSmall`
+    padding: 0.5rem;
+    `}
 `
-
-export const Underline = styled.span`
-  text-decoration: underline;
+export const Heart = styled.span`
+  color: #f30072;
 `
 
 export function LoveFromBidda() {
   return (
     <Container>
-      <ExternalLink href="https://bidda.io">with ❤️ from Bidda.io</ExternalLink>
+      <ExternalLink href="https://bidda.io">
+        with <Heart>❤️</Heart> from Bidda.io
+      </ExternalLink>
     </Container>
   )
 }
